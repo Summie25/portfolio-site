@@ -19,6 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+// document.addEventListener('DOMContentLoaded', function () {
+//   // DOM要素を取得
+//   const button = document.getElementById('js-button-drawer');
+//   const drawer = document.getElementById('js-drawer');
+//   const body = document.body;
+
+//   // ボタンがクリックされた時の処理
+//   button.addEventListener('click', function () {
+//     // ボタン、ドロワー、bodyにそれぞれクラスをトグルする
+//     button.classList.toggle('is-checked');
+//     drawer.classList.toggle('is-checked'); // ← 修正点
+//     body.classList.toggle('is-fixed');
+//   });
+// });
 
 // FVのアニメーション
 let TxtRotate = function (el, toRotate, period) {

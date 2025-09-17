@@ -20,12 +20,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- スタイルシート -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- JS読み込み -->
+    <script src="./script/index.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -44,22 +46,42 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a href="#service" class="header__nav-link button">
+                  <a href="#about" class="header__nav-link button">
                     <span class="button__icon">
                       <svg
-                        width="24"
-                        height="15"
-                        viewBox="0 0 24 15"
+                        width="17"
+                        height="18"
+                        viewBox="0 0 512 512"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path
-                          d="M10.2075 0.428596L8.29125 2.33175C7.7175 2.48818 7.185 2.77495 6.735 3.16974L5.7375 4.05241C5.355 4.39133 4.85625 4.57755 4.3425 4.57755H3.6V9.34475C4.365 9.3671 5.0925 9.67622 5.63625 10.2163L6.97125 11.5421L7.23375 11.8028L8.24625 12.8084C8.47875 13.0393 8.86125 13.0393 9.09375 12.8084C9.1575 12.7451 9.20625 12.6706 9.2325 12.5924C9.3375 12.3056 9.58125 12.0896 9.88125 12.0226C10.1813 11.9555 10.4963 12.0449 10.7138 12.2647L11.1188 12.6594C11.5538 13.0915 12.2588 13.0915 12.69 12.6594C12.8925 12.4583 13.0013 12.2013 13.0125 11.9369C13.0275 11.6092 13.2225 11.3187 13.5225 11.1771C13.8225 11.0356 14.1713 11.0654 14.4375 11.2554C14.79 11.5049 15.2813 11.4714 15.5963 11.1585C15.9488 10.8084 15.9488 10.2423 15.5963 9.89596L12.7538 7.07288L11.4112 8.30193C10.3875 9.24047 8.81625 9.25537 7.77375 8.33545C6.585 7.28517 6.55875 5.45278 7.71375 4.36899L10.3425 1.90345C11.37 0.94256 12.7275 0.40625 14.1413 0.40625C15.495 0.40625 16.8038 0.901592 17.8125 1.79172L18.9413 2.78985H20.4H21.9H23.4C23.73 2.78985 24 3.05801 24 3.38575V11.1325C24 11.7917 23.4638 12.3243 22.8 12.3243H21.6C21.1575 12.3243 20.7675 12.0859 20.5613 11.7284H17.3775C17.25 11.9779 17.0813 12.2162 16.8713 12.4248C16.23 13.0617 15.3413 13.3112 14.5088 13.1734C14.3738 13.4453 14.19 13.6985 13.9613 13.9257C12.9375 14.9425 11.3363 15.043 10.1963 14.2274C9.255 15.0021 7.8525 14.9537 6.97125 14.0747L5.9625 13.0691L5.7 12.8084L4.365 11.4825C4.15875 11.2777 3.88875 11.1585 3.6 11.1362C3.6 11.7917 3.06 12.3243 2.4 12.3243H1.2C0.53625 12.3243 0 11.7917 0 11.1325V3.38575C0 3.05801 0.27 2.78985 0.6 2.78985H2.1H3.6H4.3425C4.4175 2.78985 4.48875 2.76378 4.54125 2.71536L5.535 1.83641C6.58125 0.91649 7.9275 0.40625 9.32625 0.40625H9.7125C9.8775 0.40625 10.0463 0.413699 10.2075 0.428596ZM20.4 9.94065V4.57755H18.6C18.3788 4.57755 18.165 4.49561 18.0038 4.35036L16.62 3.12877C15.9375 2.52542 15.0563 2.19395 14.1413 2.19395C13.1888 2.19395 12.2738 2.55522 11.58 3.20326L8.95125 5.66879C8.565 6.03378 8.5725 6.6483 8.97 6.9984C9.31875 7.30752 9.8475 7.30007 10.1888 6.98722L12.885 4.51424C13.2488 4.17904 13.8188 4.20139 14.1563 4.56638C14.4938 4.93137 14.4713 5.49375 14.1038 5.82894L14.0738 5.85874L16.8638 8.62967C17.2388 9.00211 17.4825 9.46021 17.5913 9.93693H20.4V9.94065ZM2.4 10.5366C2.4 10.3785 2.33679 10.2269 2.22426 10.1152C2.11174 10.0034 1.95913 9.94065 1.8 9.94065C1.64087 9.94065 1.48826 10.0034 1.37574 10.1152C1.26321 10.2269 1.2 10.3785 1.2 10.5366C1.2 10.6946 1.26321 10.8462 1.37574 10.9579C1.48826 11.0697 1.64087 11.1325 1.8 11.1325C1.95913 11.1325 2.11174 11.0697 2.22426 10.9579C2.33679 10.8462 2.4 10.6946 2.4 10.5366ZM22.2 11.1325C22.3591 11.1325 22.5117 11.0697 22.6243 10.9579C22.7368 10.8462 22.8 10.6946 22.8 10.5366C22.8 10.3785 22.7368 10.2269 22.6243 10.1152C22.5117 10.0034 22.3591 9.94065 22.2 9.94065C22.0409 9.94065 21.8883 10.0034 21.7757 10.1152C21.6632 10.2269 21.6 10.3785 21.6 10.5366C21.6 10.6946 21.6632 10.8462 21.7757 10.9579C21.8883 11.0697 22.0409 11.1325 22.2 11.1325Z"
-                          class="button__icon-path"
-                        />
+                        <g>
+                          <path
+                            class="st0"
+                            d="M512,80.688C512,42.203,480.797,11,442.297,11c-34.594,0-63.234,25.219-68.688,58.281H138.391
+                            C132.938,36.219,104.297,11,69.703,11C31.203,11,0,42.203,0,80.688c0,34.109,24.484,62.438,56.828,68.484
+                            c-44,85.641-48.938,162.625-48.938,162.625C7.891,356.625,12.031,501,256,501s248.109-144.375,248.109-189.203
+                            c0,0-4.938-76.984-48.938-162.625C487.516,143.125,512,114.797,512,80.688z M103.266,86.031
+                            c-7.172,6.75-15.578,15.781-24.234,27.359c-2.969,0.859-6.094,1.328-9.328,1.328c-18.781,0-34.016-15.219-34.016-34.031
+                            c0-18.781,15.234-34.016,34.016-34.016c18.797,0,34.031,15.234,34.031,34.016C103.734,82.5,103.547,84.281,103.266,86.031z
+                             M256,457.859c-80.656,0-146.047-49.797-146.047-111.203S175.344,235.453,256,235.453s146.047,49.797,146.047,111.203
+                            S336.656,457.859,256,457.859z M432.969,113.391c-8.656-11.578-17.063-20.609-24.234-27.359c-0.281-1.75-0.469-3.531-0.469-5.344
+                            c0-18.781,15.234-34.016,34.031-34.016c18.781,0,34.016,15.234,34.016,34.016c0,18.813-15.234,34.031-34.016,34.031
+                            C439.063,114.719,435.938,114.25,432.969,113.391z"
+                            fill="white"
+                          ></path>
+                          <path
+                            class="st0"
+                            d="M307.688,309.734l-14.781-30.969c-3.906-8.203-12.188-13.438-21.281-13.438H256h-15.625
+                            c-9.094,0-17.375,5.234-21.281,13.438l-14.781,30.969c-2.391,5.031-0.938,11.047,3.484,14.422l41.031,31.344l-41.266,41.266
+                            l10.563,10.547L256,369.438l37.875,37.875l10.563-10.547l-41.266-41.25l41.031-31.359
+                            C308.625,320.781,310.078,314.766,307.688,309.734z"
+                            fill="white"
+                          ></path>
+                        </g>
                       </svg>
                     </span>
-                    <span class="button__text">Service -</span>
+                    <span class="button__text">About</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
@@ -78,11 +100,11 @@
                         />
                       </svg>
                     </span>
-                    <span class="button__text">Works -</span>
+                    <span class="button__text">Works</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#about" class="header__nav-link button">
+                  <a href="#service" class="header__nav-link button">
                     <span class="button__icon">
                       <svg
                         width="17"
@@ -97,7 +119,7 @@
                         />
                       </svg>
                     </span>
-                    <span class="button__text">About -</span>
+                    <span class="button__text">Service</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
@@ -120,7 +142,7 @@
                         />
                       </svg>
                     </span>
-                    <span class="button__text">Work flow -</span>
+                    <span class="button__text">Work flow</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
@@ -139,12 +161,13 @@
                         />
                       </svg>
                     </span>
-                    <span class="button__text">Message -</span>
+                    <span class="button__text">Message</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
                   <a
-                    href="#contact -"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc8vLCatXEtDOmb3w7pD-hh5XMlOnP7O2zUELl1mLdsY531kQ/viewform?usp=header"
+                    target="_blank"
                     class="header__nav-link button button--bg"
                   >
                     <span class="button__icon"
@@ -161,33 +184,31 @@
                         />
                       </svg>
                     </span>
-                    <span class="button__text">Contact -</span>
+                    <span class="button__text">Contact</span>
                   </a>
                 </li>
 
                 <li class="header__nav-item">
                   <a
-                    href="https://x.com/Summie_Web"
+                    href="https://github.com/Summie25"
                     target="_blank"
                     class="header__nav-link button button--border"
                   >
                     <span class="button__icon">
                       <svg
-                        class="svg_x"
-                        width="1200"
-                        height="1227"
-                        viewBox="0 0 1200 1227"
-                        fill="none"
+                        class="svg_github bi bi-github"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 20 16"
+                        fill="white"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
-                          fill="white"
-                          class="button__icon-path"
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
                         />
                       </svg>
                     </span>
-                    <span class="button__text button__text-x">X -</span>
+                    <span class="button__text button__text-github">GitHub</span>
                   </a>
                 </li>
               </ul>
@@ -199,25 +220,110 @@
       <!-- fv -->
       <main class="main">
         <div class="fv">
-          <picture class="fv__img">
-            <source media="(min-width: 768px)" srcset="./img/img_fv.png" />
-            <img src="./img/sp/img_fv.png" alt="" />
-          </picture>
           <div class="fv__contents">
+            <link
+              href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+              rel="stylesheet"
+              type="text/css"
+            />
             <h1 class="fv__heading">
-              <span class="fv__heading-main">Hello World!</span>
-              <span class="fv__heading-sub"
-                >I am Summie, a web developer.<br />I build things for
-                websites.<br />I heart RAMEN.</span
-              >
+              <span class="fv__heading-main"
+                >Hello World!<br />
+                I
+                <span
+                  class="txt-rotate"
+                  data-period="2000"
+                  data-rotate='[ "am Summie.", "am a web developer.", "build things for web.", "am fun!" ]'
+                ></span
+              ></span>
             </h1>
+            <p>
+              <span class="fv__heading-sub"
+                >ようこそ、Summieのウェブサイトへ！</span
+              >
+            </p>
           </div>
         </div>
+
+        <!-- About セクション -->
+        <section id="about" class="section about">
+          <div class="section__inner">
+            <div class="about__container">
+              <div class="about__img">
+                <img src="./img/img_about.png" alt="" />
+              </div>
+              <div class="about__text-contents">
+                <h2 class="section__head">
+                  <span class="section__head-main">About</span>
+                  <span class="section__head-sub">自己紹介</span>
+                </h2>
+                <p class="about__text">栃木県出身のSummie(サミー)です。</p>
+                <p class="about__text">
+                  ぎょうざ、ラーメン、いちご、レモン牛乳など、地元の名産が大好きです。
+                </p>
+                <p class="about__text">
+                  趣味はジムやカラオケなどアクティブなことに加え、写真撮影や編集も楽しんでいます。
+                </p>
+                <p class="about__text">
+                  アメリカに住んでいた経験もあり、多様な環境で人と関わることが好きです。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Works セクション -->
+        <section id="works" class="section works">
+          <div class="section__inner">
+            <h2 class="section__head">
+              <span class="section__head-main">Works</span>
+              <span class="section__head-sub">実績紹介</span>
+            </h2>
+            <p class="section__lead-text">
+              これまで制作したWebサイトやアプリを掲載予定です。現在はサンプルのみ掲載中です。また、当サイトも自ら制作していますので実績の一つとして御覧ください。
+            </p>
+            <div class="section__contents">
+              <ul class="works__list">
+                <li class="works__item">
+                  <div class="works__item-img">
+                    <img src="./img/img_works1.jpg" alt="" />
+                  </div>
+                  <h3 class="works__item-name">
+                    ポートフォリオサイト<br />（サンプル）
+                  </h3>
+                  <a href="#" class="works__item-link">詳しく見る</a>
+                </li>
+                <li class="works__item">
+                  <div class="works__item-img">
+                    <img src="./img/img_works2.jpg" alt="" />
+                  </div>
+                  <h3 class="works__item-name">
+                    スイーツ店公式サイト<br />（サンプル）
+                  </h3>
+                  <a href="#" target="_blank" class="works__item-link"
+                    >詳しく見る</a
+                  >
+                </li>
+                <li class="works__item">
+                  <div class="works__item-img">
+                    <img src="./img/img_works3.jpg" alt="" />
+                  </div>
+                  <h3 class="works__item-name">
+                    サンプルサイト<br />（サンプル）
+                  </h3>
+                  <a href="#" target="_blank" class="works__item-link"
+                    >詳しく見る</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <!-- Service セクション -->
         <section id="service" class="section service">
           <div class="section__inner">
             <h2 class="section__head">
-              <span class="section__head-main">Service -</span>
+              <span class="section__head-main">Service</span>
               <span class="section__head-sub">提供サービス</span>
             </h2>
             <p class="section__lead-text">
@@ -256,83 +362,12 @@
             </div>
           </div>
         </section>
-        <!-- Works セクション -->
-        <section id="works" class="section works">
-          <div class="section__inner">
-            <h2 class="section__head">
-              <span class="section__head-main">Works -</span>
-              <span class="section__head-sub">実績紹介</span>
-            </h2>
-            <p class="section__lead-text">
-              これまで制作したWebサイトです。また、当サイトも自ら制作していますので実績の一つとして御覧ください。
-            </p>
-            <div class="section__contents">
-              <ul class="works__list">
-                <li class="works__item">
-                  <div class="works__item-img">
-                    <img src="./img/img_works1.jpg" alt="" />
-                  </div>
-                  <h3 class="works__item-name">ポートフォリオサイト</h3>
-                  <a href="#" class="works__item-link">詳しく見る</a>
-                </li>
-                <li class="works__item">
-                  <div class="works__item-img">
-                    <img src="./img/img_works2.jpg" alt="" />
-                  </div>
-                  <h3 class="works__item-name">
-                    スイーツ店公式サイト（サンプル）
-                  </h3>
-                  <a href="#" target="_blank" class="works__item-link"
-                    >詳しく見る</a
-                  >
-                </li>
-                <li class="works__item">
-                  <div class="works__item-img">
-                    <img src="./img/img_works3.jpg" alt="" />
-                  </div>
-                  <h3 class="works__item-name">ポートフォリオサイト</h3>
-                  <a href="#" target="_blank" class="works__item-link"
-                    >詳しく見る</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- About セクション -->
-        <section id="about" class="section about">
-          <div class="section__inner">
-            <div class="about__container">
-              <div class="about__img">
-                <img src="./img/img_about.png" alt="" />
-              </div>
-              <div class="about__text-contents">
-                <h2 class="section__head">
-                  <span class="section__head-main">About -</span>
-                  <span class="section__head-sub">自己紹介</span>
-                </h2>
-                <p class="about__text">
-                  Tochigi出身のSummieです。サミーと読みます。ぎょうざ、ラーメン、かんぴょう、いちご、レモン牛乳が好きです。
-                </p>
-                <p class="about__text">
-                  ソフトウェア開発支援業務・ICT支援員を経て、現在はWebエンジニアを目指しています。
-                </p>
-                <p class="about__text">
-                  Web制作・開発に関しては、日々新しい技術を取り入れるように精進してまいります。
-                </p>
-                <p class="about__text">
-                  趣味は筋トレ、ダンス、カラオケなど、アクティブなことも好きですが、写真撮影と編集も好きです。
-                </p>
-                <p class="about__text">たまに英語を話します。</p>
-              </div>
-            </div>
-          </div>
-        </section>
+
         <!-- Work Flow セクション -->
         <section id="flow" class="section flow">
           <div class="section__inner">
             <h2 class="section__head">
-              <span class="section__head-main">Work Flow -</span>
+              <span class="section__head-main">Work Flow</span>
               <span class="section__head-sub">制作の流れ</span>
             </h2>
             <p class="section__lead-text">
@@ -393,11 +428,14 @@
               </div>
               <div class="message__text-contents">
                 <h2 class="section__head">
-                  <span class="section__head-main">Message -</span>
-                  <span class="section__head-sub">ご依頼をお考えの方へ</span>
+                  <span class="section__head-main">Message</span>
+                  <span class="section__head-sub">ごあいさつ</span>
                 </h2>
                 <p class="message__text">
-                  静的なHTMLコーディングからWordPress化まで対応可能です。<br />デザインカンプの意図をしっかりと理解した上で、迅速、丁寧な対応でコーディング業務をサポートいたします！
+                  ソフトウェア開発支援業務やICT支援員の経験を経て、現在はWebエンジニアを目指して学習を進めています。<br />
+                  仕事をしながら、アメリカで情報処理系の大学を卒業しました。<br />
+                  日英バイリンガルとして、日本語・英語の両方で業務経験があり、グローバルな環境にも柔軟に対応可能です。<br />
+                  新しい技術を積極的に取り入れる姿勢を大切にし、技術面だけでなく、コミュニケーションやサポートの側面からも貢献できるエンジニアを目指しています。
                 </p>
               </div>
             </div>
@@ -408,20 +446,21 @@
         <div class="page-bottom">
           <div class="page-bottom__item page-bottom__item--contact">
             <h2 class="section__head section__head--center">
-              <span class="section__head-main">Contact -</span>
+              <span class="section__head-main">Contact</span>
               <span class="section__head-sub">お問い合わせ</span>
             </h2>
             <a
-              href="#"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc8vLCatXEtDOmb3w7pD-hh5XMlOnP7O2zUELl1mLdsY531kQ/viewform?usp=header"
               target="_blank"
               class="page-bottom__button button button--border"
             >
-              <span class="button__icon"
-                ><svg
-                  width="20"
-                  height="16"
+              <span class="button__icon">
+                <svg
+                  class="svg_mail"
+                  width="32px"
+                  height="32px"
                   viewBox="0 0 20 16"
-                  fill="none"
+                  fill="white"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -430,37 +469,36 @@
                   />
                 </svg>
               </span>
-              <span class="button__text">Contact -</span>
+              <span class="button__text">Contact</span>
             </a>
           </div>
 
-          <!-- X (旧Twitter) -->
-          <div class="page-bottom__item page-bottom__item--x">
+          <!-- GitHub -->
+          <div class="page-bottom__item page-bottom__item--github">
             <h2 class="section__head section__head--center">
-              <span class="section__head-main">X -</span>
-              <span class="section__head-sub">X (旧Twitter)</span>
+              <span class="section__head-main">GitHub</span>
+              <span class="section__head-sub">GitHub</span>
             </h2>
             <a
-              href="https://x.com/Summie_Web"
+              href="https://github.com/Summie25"
               target="_blank"
               class="page-bottom__button button button--border"
             >
               <span class="button__icon">
                 <svg
-                  class="svg_x"
-                  width="1200"
-                  height="1227"
-                  viewBox="0 0 1200 1227"
-                  fill="none"
+                  class="svg_github bi bi-github"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 20 16"
+                  fill="white"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
-                    fill="white"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
                   />
                 </svg>
               </span>
-              <span class="button__text button__text-x">X -</span>
+              <span class="button__text button__text-github">GitHub</span>
             </a>
           </div>
         </div>
@@ -471,8 +509,5 @@
         </footer>
       </main>
     </div>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./script/index.js"></script>
   </body>
 </html>
